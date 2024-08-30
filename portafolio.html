@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noiz Agency - Servicios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css"> 
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/noizbl@2x.png" alt="Noiz Logo" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a href="portafolio.html" class="nav-link">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Equipo</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Procesos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Carreras</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<section class="portafolio-section">
+    <div class="container">
+        <h2 class="section-title">Portafolio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="portfolio-card">
+                    <img src="img/branding.jpg" alt="Branding" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3>Branding</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-card">
+                    <img src="img/campanas.jpg" alt="Campañas" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3>Campañas</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-card">
+                    <img src="img/redes.jpg" alt="Redes" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <h3>Redes</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="cta-button">Ver Más <span class="arrow">→</span></button>
+    </div>
+</section>
+	
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>Copyright © 2024 Noiz Agency | Powered by Noiz Agency</p>
+    </footer>
+
+    <div class="chatbot-button" onclick="openChat()">💬</div>
+
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">Noiz Chatbot</div>
+        <div class="chat-body" id="chatBody">
+            <div class="message bot-message">Hola, soy el asistente Noiz. ¿En qué puedo ayudarte hoy?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Escribe tu mensaje...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('#mainNavbar').addClass('scrolled');
+            } else {
+                $('#mainNavbar').removeClass('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
