@@ -11,6 +11,7 @@
 </head>
 <body>
 
+    <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -23,17 +24,19 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
                     <li class="nav-item"><a href="portafolio.html" class="nav-link">Portafolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Equipo</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Procesos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Carreras</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre Nosotros</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+					<li class="nav-item"><a class="nav-link" href="citas.html">Citas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a href="team.html" class="nav-link">Equipo</a></li>
+                    <li class="nav-item"><a href="procesos.html" class="nav-link">Procesos</a></li>
+                    <li class="nav-item"><a href="carreras.html" class="nav-link">Carreras</a></li>
+                    <li class="nav-item"><a href="about-us.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="contact-us.html" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+	</header>
 
 <section class="servicios-section">
     <div class="container">
@@ -106,53 +109,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 
-    <script>
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 50) {
-                $('#mainNavbar').addClass('scrolled');
-            } else {
-                $('#mainNavbar').removeClass('scrolled');
-            }
-        });
-    </script>
-	    <script>
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 50) {
-                $('#mainNavbar').addClass('scrolled');
-            } else {
-                $('#mainNavbar').removeClass('scrolled');
-            }
-        });
-
-        function openChat() {
-            var chatWindow = document.getElementById('chatWindow');
-            if (chatWindow.style.display === 'block') {
-                chatWindow.style.display = 'none';
-            } else {
-                chatWindow.style.display = 'block';
-            }
-        }
-
-        function sendMessage() {
-            var userInput = document.getElementById('userInput');
-            var chatBody = document.getElementById('chatBody');
-            
-            if (userInput.value.trim() !== '') {
-                var userMessage = document.createElement('div');
-                userMessage.className = 'message user-message';
-                userMessage.innerText = userInput.value;
-                chatBody.appendChild(userMessage);
-
-                var botMessage = document.createElement('div');
-                botMessage.className = 'message bot-message';
-                botMessage.innerText = 'Gracias por tu mensaje. Te responderemos pronto.';
-                chatBody.appendChild(botMessage);
-
-                userInput.value = '';
-                chatBody.scrollTop = chatBody.scrollHeight;
-            }
-        }
-    </script>
 
 
 </body>
