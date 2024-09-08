@@ -65,3 +65,49 @@ function toggleDescription(element) {
         element.innerText = '+'; 
     }
 }
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('#mainNavbar').addClass('scrolled');
+            } else {
+                $('#mainNavbar').removeClass('scrolled');
+            }
+        });
+    
+	    
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('#mainNavbar').addClass('scrolled');
+            } else {
+                $('#mainNavbar').removeClass('scrolled');
+            }
+        });
+
+        function openChat() {
+            var chatWindow = document.getElementById('chatWindow');
+            if (chatWindow.style.display === 'block') {
+                chatWindow.style.display = 'none';
+            } else {
+                chatWindow.style.display = 'block';
+            }
+        }
+
+        function sendMessage() {
+            var userInput = document.getElementById('userInput');
+            var chatBody = document.getElementById('chatBody');
+            
+            if (userInput.value.trim() !== '') {
+                var userMessage = document.createElement('div');
+                userMessage.className = 'message user-message';
+                userMessage.innerText = userInput.value;
+                chatBody.appendChild(userMessage);
+
+                var botMessage = document.createElement('div');
+                botMessage.className = 'message bot-message';
+                botMessage.innerText = 'Gracias por tu mensaje. Te responderemos pronto.';
+                chatBody.appendChild(botMessage);
+
+                userInput.value = '';
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+        }
