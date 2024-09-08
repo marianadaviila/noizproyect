@@ -8,65 +8,117 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/noizbl@2x.png" alt="Noiz Logo" height="45">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/noizbl@2x.png" alt="Noiz Logo" height="45">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
                     <li class="nav-item"><a href="portafolio.html" class="nav-link">Portafolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Equipo</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Procesos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Carreras</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre Nosotros</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-                </ul>
+					<li class="nav-item"><a class="nav-link" href="citas.html">Citas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a href="team.html" class="nav-link">Equipo</a></li>
+                    <li class="nav-item"><a href="procesos.html" class="nav-link">Procesos</a></li>
+                    <li class="nav-item"><a href="carreras.html" class="nav-link">Carreras</a></li>
+                    <li class="nav-item"><a href="about-us.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="contact-us.html" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="portafolio-section">
+        <div class="container">
+            <h2 class="section-title">Portafolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Branding</h3>
+                    <div class="owl-carousel owl-theme branding-carousel">
+                        <div class="portfolio-card">
+                            <img src="img/branding1.jpg" alt="Branding 1" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/branding2.jpg" alt="Branding 2" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/branding3.jpg" alt="Branding 3" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/branding4.jpg" alt="Branding 4" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/branding5.jpg" alt="Branding 5" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/branding6.jpg" alt="Branding 6" class="portfolio-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>Campañas</h3>
+                    <div class="owl-carousel owl-theme campanas-carousel">
+                        <div class="portfolio-card">
+                            <img src="img/campanas1.jpg" alt="Campañas 1" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/campanas2.jpg" alt="Campañas 2" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/campanas3.jpg" alt="Campañas 3" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/campanas4.jpg" alt="Campañas 4" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/campanas5.jpg" alt="Campañas 5" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/campanas6.jpg" alt="Campañas 6" class="portfolio-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>Redes</h3>
+                    <div class="owl-carousel owl-theme redes-carousel">
+                        <div class="portfolio-card">
+                            <img src="img/redes1.jpg" alt="Redes 1" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/redes2.jpg" alt="Redes 2" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/redes3.jpg" alt="Redes 3" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/redes4.jpg" alt="Redes 4" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/redes5.jpg" alt="Redes 5" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-card">
+                            <img src="img/redes6.jpg" alt="Redes 6" class="portfolio-image">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-<section class="portafolio-section">
-    <div class="container">
-        <h2 class="section-title">Portafolio</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="portfolio-card">
-                    <img src="img/branding.jpg" alt="Branding" class="portfolio-image">
-                    <div class="portfolio-overlay">
-                        <h3>Branding</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="portfolio-card">
-                    <img src="img/campanas.jpg" alt="Campañas" class="portfolio-image">
-                    <div class="portfolio-overlay">
-                        <h3>Campañas</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="portfolio-card">
-                    <img src="img/redes.jpg" alt="Redes" class="portfolio-image">
-                    <div class="portfolio-overlay">
-                        <h3>Redes</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="cta-button">Ver Más <span class="arrow">→</span></button>
-    </div>
-</section>
-	
+    </section>
+        
     <footer>
         <div class="social-icons">
             <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
@@ -103,6 +155,32 @@
             }
         });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $('.branding-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            items: 1 
+        });
 
+        $('.campanas-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            items: 1 
+        });
+
+        $('.redes-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            items: 1 
+        });
+    });
+    </script>
+    
 </body>
 </html>
