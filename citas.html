@@ -7,51 +7,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css"> 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 <header>
-    
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
-    <div class="container-fluid"> 
-        <a class="navbar-brand" href="index.html">
-            <img src="img/noizbl@2x.png" alt="Noiz Logo" height="45">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                <li class="nav-item"><a href="portafolio.html" class="nav-link">Portafolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="citas.html">Citas</a></li>
-                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a href="team.html" class="nav-link">Equipo</a></li>
-                <li class="nav-item"><a href="carreras.html" class="nav-link">Carreras</a></li>
-                <li class="nav-item"><a href="about-us.html" class="nav-link">Sobre Nosotros</a></li>
-                <li class="nav-item"><a href="contact-us.html" class="nav-link">Contacto</a></li>
-                <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+        <div class="container-fluid"> 
+            <a class="navbar-brand" href="index.html">
+                <img src="img/noizbl@2x.png" alt="Noiz Logo" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a href="portafolio.html" class="nav-link">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="citas.html">Citas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a href="team.html" class="nav-link">Equipo</a></li>
+                    <li class="nav-item"><a href="carreras.html" class="nav-link">Carreras</a></li>
+                    <li class="nav-item"><a href="about-us.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="contact-us.html" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
                 </ul>
              </div>
            </div>
      </nav>
 </header>
-	
+
 <section class="appointment-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2 class="section-title">Citas</h2>
-                <div class="appointment-review d-flex justify-content-center align-items-center">
-                    <span>Reseñas ★ 4.5</span>
-                </div>
+        <div class="appointment-header">
+            <h2 class="section-title">Citas</h2>
+            <div class="appointment-review d-flex justify-content-center align-items-center">
+                <span>Reseñas ★ 4.5</span>
             </div>
         </div>
-        <div class="row justify-content-between mt-4">
-            <div class="col-lg-6 col-12">
-                <form action="#" method="POST" class="appointment-form">
-                    <div class="form-group">
+
+        <div class="appointment-content row justify-content-between mt-4">
+            <div class="appointment-form col-md-6 col-12">
+                <form action="#" method="POST">
+                    <div class="form-group position-relative">
                         <label for="name">Nombre</label>
                         <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre">
                     </div>
@@ -75,8 +71,8 @@
                     <button type="submit" class="btn btn-primary">Crear Cita</button>
                 </form>
             </div>
-            <div class="col-lg-6 col-12">
-                <img src="img/brand-strategy.jpg" alt="Brand Strategy" class="img-fluid rounded appointment-image">
+            <div class="appointment-image col-md-6 col-12">
+                <img src="img/brand-strategy.jpg" alt="Brand Strategy" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -108,5 +104,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
