@@ -32,9 +32,18 @@ body {
     background-color: #213682 !important;
 }
 
+.navbar .container-fluid {
+    padding: 0 20px; 
+}
+
 .navbar .navbar-brand img {
-    max-height: 45px;
-    margin-left: -30px;
+    height: auto;
+    max-height: 45px; 
+    margin-left: 0; 
+}
+
+.navbar-toggler {
+    margin-right: 10px; 
 }
 
 .navbar-nav {
@@ -60,9 +69,9 @@ body {
     color: #0057bf !important;
 }
 
-@media (min-width: 992px) {
-    .navbar-nav {
-        flex-direction: row;
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-height: 35px; 
     }
 }
 
@@ -529,8 +538,14 @@ footer p {
     margin-bottom: 10px;
     max-width: 800px;
     width: 100%;
-    margin-left: -50px; 
 	margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .appointment-form,
+    .appointment-image {
+        width: 100%;
+    }
 }
 
 .appointment-header .badge {
@@ -768,19 +783,16 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .team-section .section-title {
     font-size: 2.5rem;
     color: white;
-    margin-top: -40px;
-	margin-bottom: 30px;
-	text-align: center;
+    margin-bottom: 30px;
+    text-align: center; /* Asegura que el título esté centrado */
 }
 
 .team-cards {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 20px;
 }
 
 .team-card {
@@ -794,8 +806,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-    height: 100%;
-    min-height: 350px;
 }
 
 .team-card:hover {
@@ -826,13 +836,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .team-card .social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: auto;
+    gap: 10px; 
 }
 
 .team-card .social-icons a {
     color: white;
-    font-size: 20px;
+    font-size: 16px; 
     transition: color 0.3s ease;
 }
 
@@ -840,43 +849,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     color: #0057bf;
 }
 
-.team-card:nth-child(1) {
-    grid-column: span 2; 
-}
-
-.team-card:nth-child(2) {
-    grid-column: span 2;
-}
-
-.team-card:nth-child(3) {
-    grid-column: span 2; 
-}
-
-.team-card:nth-child(4) {
-    grid-column: 2 / span 2; 
-}
-
-.team-card:nth-child(5) {
-    grid-column: 4 / span 2; 
-}
-
-
 @media (max-width: 992px) {
-    .team-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .team-card {
-        grid-column: span 1;
+        margin-bottom: 30px;
     }
 }
 
 @media (max-width: 768px) {
-    .team-cards {
-        grid-template-columns: 1fr; 
-    }
-
     .team-card {
-        grid-column: span 1;
+        margin-bottom: 20px;
     }
 }
