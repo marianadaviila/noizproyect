@@ -307,6 +307,34 @@ cite {
     color: #0057bf;
 }
 
+.service-card h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .servicios-section .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-cards {
+        display: block; 
+        width: 100%;
+    }
+
+    .service-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .service-card {
+        text-align: left;
+    }
+}
+
 /* Portfolio Section */
 .portafolio-section {
     padding: 90px; 
@@ -523,8 +551,14 @@ footer p {
     bottom: 10px;
 }
 
+.appointment-header h2 {
+    font-size: 2.5rem;
+    margin-top: 20px; 
+    text-align: center;
+}
+
 .appointment-section {
-    padding: 40px 0;
+    padding: 50px 0;
     color: white;
     display: flex;
     flex-direction: column;
@@ -535,14 +569,17 @@ footer p {
 
 .appointment-header {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+	padding-top: 20px;
 }
 
 .appointment-review {
+    text-align: center;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
+    gap: 5px;
     align-items: center;
-    margin-top: 5px;
 }
 
 .appointment-form {
@@ -559,13 +596,62 @@ footer p {
     border-radius: 10px;
 }
 
+input[type="date"], input[type="time"] {
+    position: relative;
+    padding-left: 40px; 
+}
+
+input[type="date"]::before, input[type="time"]::before {
+    font-family: "Font Awesome 5 Free"; 
+    content: "\f133"; 
+    font-weight: 900;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #A9A9A9;
+}
+
+input[type="time"]::before {
+    content: "\f017"; 
+}
+
+.appointment-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 768px) {
-    .appointment-header, .appointment-form, .appointment-image {
-        width: 100%;
+    .appointment-header {
+        margin-top: 50px;
     }
 
-    .appointment-form {
-        margin-top: 20px;
+    .appointment-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .appointment-review {
+        margin-top: 15px;
+        justify-content: center;
+    }
+	
+	.appointment-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .appointment-form, .appointment-image {
+        width: 100%;
+    }
+	
+	input[type="date"], input[type="time"] {
+        padding-left: 35px; 
     }
 }
 
