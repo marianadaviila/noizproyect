@@ -596,26 +596,6 @@ footer p {
     border-radius: 10px;
 }
 
-input[type="date"], input[type="time"] {
-    position: relative;
-    padding-left: 40px; 
-}
-
-input[type="date"]::before, input[type="time"]::before {
-    font-family: "Font Awesome 5 Free"; 
-    content: "\f133"; 
-    font-weight: 900;
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #A9A9A9;
-}
-
-input[type="time"]::before {
-    content: "\f017"; 
-}
-
 .appointment-content {
     display: flex;
     justify-content: space-between;
@@ -651,8 +631,15 @@ input[type="time"]::before {
     }
 	
 	input[type="date"], input[type="time"] {
-        padding-left: 35px; 
-    }
+       -webkit-appearance: none; 
+    appearance: none;
+    position: relative;
+    padding-left: 35px; 
+}
+
+.form-control {
+    width: 100%;
+}
 }
 
 .appointment-header .badge {
