@@ -606,7 +606,7 @@ footer p {
 
 @media (max-width: 768px) {
     .appointment-header {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .appointment-content {
@@ -629,13 +629,6 @@ footer p {
     .appointment-form, .appointment-image {
         width: 100%;
     }
-	
-	input[type="date"], input[type="time"] {
-       -webkit-appearance: none; 
-    appearance: none;
-    position: relative;
-    padding-left: 35px; 
-}
 
 .form-control {
     width: 100%;
