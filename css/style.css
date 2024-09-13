@@ -989,3 +989,130 @@ input[type="time"]::-webkit-calendar-picker-indicator {
         margin-bottom: 20px;
     }
 }
+
+.careers-section {
+    padding: 50px 0;
+    color: white;
+    background-color: #070d2e;
+}
+
+.fixed-section {
+    position: relative;
+    padding-top: 50px; /* Adjust the value as needed */
+}
+
+.scrollable-section {
+    position: relative;
+    margin-top: 30px; 
+}
+
+.careers-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.careers-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.spacer {
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #070d2e, #213682);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #213682, #070d2e); 
+}
+
+.careers-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.careers-links li {
+    margin: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 20px; 
+    padding-top: 25px; 
+}
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding-left: 0;
+    position: relative;
+	padding-top: 20;
+}
+
+.toggle-btn::after {
+    content: '→';
+    color: #007bff;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+.toggle-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+	padding-top: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 45px;
+    align-items: start;
+}
+
+.left-column, .right-column {
+    align-items: stretch;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.left-column img, .right-column img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.right-column img {
+    max-height: 530px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .careers-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .right-column img {
+        height: auto;
+    }
+}
