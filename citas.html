@@ -39,18 +39,18 @@
 </header>
 	
 <section class="appointment-section">
-    <div class="container d-md-flex justify-content-center align-items-center flex-column">
-        <div class="appointment-header">
-            <div class="col-md-6 text-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
                 <h2 class="section-title">Citas</h2>
-            <div class="appointment-review d-flex align-items-center">
-                <span>Reseñas ★ 4.5</span>
+                <div class="appointment-review d-flex justify-content-center align-items-center">
+                    <span>Reseñas ★ 4.5</span>
+                </div>
             </div>
         </div>
-		</div>
-        <div class="appointment-content row justify-content-between mt-4">
-            <div class="appointment-form col-md-6 col-12">
-                <form action="#" method="POST">
+        <div class="row justify-content-between mt-4">
+            <div class="col-lg-6 col-12">
+                <form action="#" method="POST" class="appointment-form">
                     <div class="form-group">
                         <label for="name">Nombre</label>
                         <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre">
@@ -64,19 +64,19 @@
                             <option value="bigdata">Análisis de Datos y Big Data</option>
                         </select>
                     </div>
-					<div class="form-group position-relative">
-    				<label for="date">Fecha</label>
-    				<input type="date" class="form-control" id="date">
-					</div>
-					<div class="form-group position-relative">
-   					<label for="time">Hora</label>
-    				<input type="time" class="form-control" id="time">
-					</div>
+                    <div class="form-group position-relative">
+                        <label for="date">Fecha</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="form-group position-relative">
+                        <label for="time">Hora</label>
+                        <input type="time" class="form-control" id="time">
+                    </div>
                     <button type="submit" class="btn btn-primary">Crear Cita</button>
                 </form>
             </div>
-            <div class="appointment-image col-md-6 col-12">
-                <img src="img/brand-strategy.jpg" alt="Brand Strategy" class="img-fluid rounded">
+            <div class="col-lg-6 col-12">
+                <img src="img/brand-strategy.jpg" alt="Brand Strategy" class="img-fluid rounded appointment-image">
             </div>
         </div>
     </div>
