@@ -1215,64 +1215,73 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 
+/* Ajustes de la sección Hero en About */
 .about-hero-section {
-    padding: 100px 0; 
+    padding-top: 120px; /* Aumentamos el padding superior */
+    padding-bottom: 60px; /* Aseguramos espacio también en la parte inferior */
     text-align: center;
+    background-color: #070d2e;
 }
 
 .about-hero-section h1 {
-    font-size: 3.5rem; 
+    font-size: 4rem; /* Aumentamos el tamaño del título */
     color: white;
     margin-bottom: 20px; 
-    line-height: 1.2; 
+    line-height: 1.2;
+    padding-top: 20px; /* Aseguramos que el título no se corte en la parte superior */
 }
 
 .about-hero-section p {
     font-size: 1.3rem;
     color: white;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .about-hero-section a.btn {
-    margin-bottom: 40px; 
+    margin-bottom: 40px; /* Más espacio debajo del botón */
 }
 
-.about-hero-section .btn-primary {
-    background: linear-gradient(135deg, #213682, #070d2e);
-    padding: 10px 20px;
-    border-radius: 10px; 
-    color: white;
-    border: none;
+.about-hero-section img {
+    border-radius: 15px; /* Esquinas redondeadas */
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Añadimos un margen superior para que no esté pegada al texto */
+    display: block;
 }
 
-
+/* Ajustes responsivos */
 @media (max-width: 768px) {
     .about-hero-section {
-        padding: 80px 0; 
+        padding-top: 100px; /* Reducimos un poco el padding en pantallas pequeñas */
+        padding-bottom: 40px;
     }
 
     .about-hero-section h1 {
-        font-size: 2.5rem; 
+        font-size: 3rem; /* Ajustamos el tamaño del título en móviles */
         line-height: 1.1;
     }
 
     .about-hero-section p {
         font-size: 1.1rem;
-        margin-bottom: 30px; 
+        margin-bottom: 30px; /* Más espacio debajo del párrafo */
     }
 
     .about-hero-section a.btn {
-        margin-bottom: 50px; 
+        margin-bottom: 50px; /* Espacio adicional debajo del botón en móviles */
     }
 }
 
 @media (max-width: 576px) {
     .about-hero-section h1 {
-        font-size: 2rem; 
+        font-size: 2.5rem; /* Ajuste adicional para pantallas más pequeñas */
     }
 
     .about-hero-section p {
-        font-size: 1rem; 
+        font-size: 1rem; /* Texto más pequeño en móviles */
+    }
+
+    .about-hero-section img {
+        width: 100%; /* Imagen ocupa todo el ancho en móviles */
     }
 }
 
