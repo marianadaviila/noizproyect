@@ -341,10 +341,10 @@ cite {
     }
 }
 
-/* Estilos específicos para la sección de Portafolio */
+
 .portafolio-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, #213682, #070d2e);  /* Mantén el color de fondo */
+    background: linear-gradient(135deg, #213682, #070d2e);  
     text-align: center;
 }
 
@@ -353,14 +353,14 @@ cite {
     font-weight: 700;
     color: white;
     margin-bottom: 30px;
-    text-align: center;  /* Asegúrate de que el título esté centrado */
+    text-align: center;  
 }
 
 .portafolio-description {
     font-size: 1.3rem;
     color: rgba(255, 255, 255, 0.7);
     max-width: 800px;
-    margin: 0 auto 50px auto;  /* Centra y agrega margen inferior */
+    margin: 0 auto 50px auto;  
 }
 
 .portfolio-categories {
@@ -371,13 +371,13 @@ cite {
 }
 
 .intro-video {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    max-width: 800px; /* Ajusta el tamaño máximo si es necesario */
-    height: auto; /* Mantiene la proporción del video */
-    margin: 0 auto; /* Centra el video horizontalmente */
+    width: 100%; 
+    max-width: 800px; 
+    height: auto; 
+    margin: 0 auto; 
 }
 
-/* Botones de categorías del portafolio */
+
 .portfolio-categories button {
     background-color: #213682;
     color: white;
@@ -424,7 +424,7 @@ cite {
     font-size: 1.2rem;
 }
 
-/* Nav personalizado para el carrusel */
+
 .owl-nav {
     position: absolute;
     top: 50%;
@@ -489,10 +489,10 @@ cite {
 }
 
 .owl-carousel .owl-dot.active {
-    background-color: #213682;  /* Cambia el color del punto activo */
+    background-color: #213682;  
 }
 
-/* Responsivo para el carrusel */
+
 @media (max-width: 768px) {
     .owl-nav button {
         font-size: 1.5rem;
@@ -512,7 +512,7 @@ cite {
     padding-top: 30px;
 }
 
-/* Footer */
+
 footer {
     background-color: #223682;
     color: white;
@@ -553,7 +553,7 @@ footer p {
     margin-top: 10px;
 }
 
-/* Chatbot */
+
 .chatbot-button {
     position: fixed;
     bottom: 20px;
@@ -644,7 +644,7 @@ footer p {
 	
 }
 
-/*Citas*/
+
 
 .appointment-header h2 {
     font-size: 3rem;
@@ -942,12 +942,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
 }
 
-/* Fondo oscuro de Noiz */
+
 .bg-noiz-dark {
-    background-color: #070d2e; /* Fondo característico de Noiz */
+    background-color: #070d2e; 
 }
 
-/* Estilos de la sección de Team */
+
 .section-team {
     padding: 60px 0;
 }
@@ -973,30 +973,30 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin: 0 auto 20px;
 }
 
-/* Estilo de las Cards con degradado */
+
 .team-card {
     border-radius: 15px;
     background: linear-gradient(135deg, #213682, #0a1733);
     padding: 20px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    min-height: 350px; /* Menor altura sin la descripción */
+    min-height: 350px; 
     position: relative;
-    overflow: hidden; /* Evita que se corte la descripción antes del hover */
+    overflow: hidden; 
 }
 
 .team-card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-    min-height: 460px; /* Aumenta la altura solo cuando se hace hover */
+    min-height: 460px; 
 }
 
-/* Imagen circular con borde blanco */
+
 .team-img-wrapper {
     text-align: center;
     margin-bottom: 20px;
     border-radius: 50%;
-    border: 5px solid white; /* Borde blanco */
+    border: 5px solid white; 
     padding: 5px;
     width: 130px;
     height: 130px;
@@ -1006,11 +1006,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .team-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que la imagen mantenga su proporción dentro del contenedor */
+    object-fit: cover; 
     border-radius: 50%;
 }
 
-/* Información del miembro */
+
 .team-info {
     text-align: center;
     color: white;
@@ -1023,29 +1023,29 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-weight: 700;
 }
 
-/* Redes sociales debajo del nombre */
+
 .social-icons {
     margin-top: 10px;
 }
 
-/* Descripción oculta inicialmente */
+
 .team-description {
-    display: none; /* Inicialmente oculta */
+    display: none; 
     padding-top: 10px;
-    color: white; /* Texto en blanco */
+    color: white; 
     position: relative;
     text-align: center;
     font-size: 14px;
 }
 
-/* Mostrar la descripción debajo de las redes sociales al hacer hover */
+
 .team-card:hover .team-description {
-    display: block; /* Se muestra solo al hacer hover */
+    display: block; 
     padding-top: 10px;
-    margin-top: 20px; /* Para que la descripción aparezca debajo de las redes sociales */
+    margin-top: 20px; 
 }
 
-/* Grayscale para imágenes */
+
 .img-gris img {
     filter: grayscale(1);
 }
@@ -1054,7 +1054,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     filter: grayscale(0);
 }
 
-/* Carousel Dots */
+
 .team-carousel .owl-dots {
     text-align: center;
 }
@@ -1072,7 +1072,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border: 0 !important;
 }
 
-/* Responsiveness */
+
 @media (max-width: 600px) {
     .team-subtitulo {
         padding-left: 10%;
@@ -1215,27 +1215,22 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
 }
 
-/* About Hero Section */
-.about-hero-section {
-    padding-top: 100px; 
-    padding-bottom: 100px;
-    background-color: #070d2e;
-    color: white;
-    text-align: center;
-}
 
 .about-hero-section h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 3rem; 
+    color: white;
+    margin-bottom: 20px; 
+    line-height: 1.2; 
 }
 
 .about-hero-section p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 20px; 
+}
+
+.about-hero-section a.btn {
+    margin-bottom: 20px; 
 }
 
 .about-hero-section .btn-primary {
@@ -1246,7 +1241,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border: none;
 }
 
-/* Vision and Values Section */
+
 .vision-values-section {
     padding: 70px 0;
     background: linear-gradient(135deg, #213682, #070d2e);
@@ -1277,7 +1272,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     max-width: 300px;
 }
 
-/* Story Section */
+
 .story-section {
     padding: 100px 0;
     background-color: #070d2e;
@@ -1294,7 +1289,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 1rem; 
 }
 
-/* Stats Section */
+
 .stats-section {
     padding: 70px 0;
     background: linear-gradient(135deg, #070d2e, #213682);
@@ -1311,7 +1306,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 1rem;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 992px) {
     .about-hero-section h1 {
         font-size: 2.5rem;
@@ -1328,8 +1323,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 @media (max-width: 768px) {
     .about-hero-section h1 {
-        font-size: 2rem;
+        font-size: 2.5rem; 
     }
+
+    .about-hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .about-hero-section a.btn {
+        margin-bottom: 30px; 
+    }
+}
 
     .vision-values-section h2 {
         font-size: 2rem;
@@ -1357,7 +1361,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
         padding: 40px 0;
     }
 }
-/* Sección Casos de Éxito */
 .success-stories {
     padding: 80px 0;
     background-color: #12204A; 
@@ -1425,7 +1428,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
 }
 
-/* Sección Herramientas Usadas */
+
 .tools-used {
     padding: 60px 0;
     background-color: #070d2e;
@@ -1463,14 +1466,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin-right: 10px;
 }
 
-/* Media query para pantallas pequeñas */
+
 @media (max-width: 768px) {
     .tools-used ul li {
         font-size: 1.1rem; 
     }
 }
 
-/* Sección Testimonios de Servicios */
+
 .testimonial-services {
     padding: 70px 0;
     background-color: #1C2A54;
@@ -1501,7 +1504,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Media query para pantallas más pequeñas */
+
 @media (max-width: 768px) {
     .testimonial-services h2 {
         font-size: 2.2rem; 
@@ -1511,7 +1514,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
 }
 
-/* Botón de Llamada a la Acción */
+
 .cta-button {
     background-color: #00BFFF;
     color: white;
@@ -1528,7 +1531,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-color: #009ACD;
 }
 
-/* Media query para el botón en pantallas más pequeñas */
+
 @media (max-width: 768px) {
     .cta-button {
         font-size: 1rem; 
@@ -1536,19 +1539,19 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
 }
 
-/* Contact Section Styles */
+
 .contact-hero {
     background-color: #070d2e;
-    padding: 100px 0 40px 0;  /* Agregamos suficiente padding superior para evitar que la imagen se corte */
+    padding: 100px 0 40px 0; 
     color: white;
     text-align: center;
-    overflow: hidden; /* Evitamos cualquier desbordamiento */
+    overflow: hidden; 
 }
 
 .contact-hero h1 {
     font-size: 3rem;
     color: white;
-    margin-bottom: 10px; /* Reducimos el margen inferior para acercarlo al texto */
+    margin-bottom: 10px;
 }
 
 .contact-hero p {
@@ -1559,18 +1562,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin: 0 auto;
 }
 
-/* Redondear esquinas de la imagen y centrarla */
 .rounded-image {
-    border-radius: 15px; /* Esquinas redondeadas */
-    width: 80%; /* Ajusta el ancho de la imagen */
-    height: auto; /* Mantiene las proporciones */
-    object-fit: cover; /* Evita que la imagen se deforme */
+    border-radius: 15px; 
+    width: 80%; 
+    height: auto;
+    object-fit: cover; 
     display: block;
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin: 0 auto; 
 }
 
 .contact-form {
-    background: linear-gradient(135deg, #213682, #0a1733); /* Fondo con degradado */
+    background: linear-gradient(135deg, #213682, #0a1733);
     padding: 80px 0;
     color: white;
 }
@@ -1592,9 +1594,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 /* Responsiveness */
 @media (max-width: 768px) {
-    /* Ajustes responsivos para hero */
     .contact-hero {
-        padding: 80px 0 30px 0; /* Aumentamos el padding superior en móviles para evitar el corte por el navbar */
+        padding: 80px 0 30px 0; 
     }
 
     .contact-hero h1 {
@@ -1606,8 +1607,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
 
     .contact-hero img {
-        width: 90%; /* Imagen ligeramente más grande en móviles */
-        object-fit: cover; /* Mantener proporción sin cortes */
+        width: 90%; 
+        object-fit: cover; 
     }
 
     .contact-form {
@@ -1620,9 +1621,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 576px) {
-    /* Ajustes responsivos para móviles pequeños */
+    
     .contact-hero {
-        padding: 70px 0 30px 0; /* Aseguramos que no se corte la imagen en pantallas pequeñas */
+        padding: 70px 0 30px 0; 
     }
 
     .contact-hero h1 {
@@ -1631,12 +1632,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
     .contact-hero p {
         font-size: 1rem;
-        max-width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+        max-width: 100%; 
     }
 
     .contact-hero img {
-        width: 100%; /* Imagen ocupa todo el ancho en móviles */
-        object-fit: cover; /* Mantiene las proporciones sin cortes */
+        width: 100%; 
+        object-fit: cover; 
     }
 
     .contact-form {
@@ -1648,10 +1649,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
 }
 
-/* FAQ Section Styles */
 .faq-section {
     padding: 60px 0;
-    background-color: #070d2e; /* Fondo oscuro como el estilo de Noiz */
+    background-color: #070d2e; 
     color: white;
 }
 
@@ -1691,7 +1691,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     color: rgba(255, 255, 255, 0.7);
     display: none;
     line-height: 1.6;
-    text-align: left; /* Alinea el texto de las respuestas a la izquierda */
+    text-align: left; 
 }
 
 .faq-item.active .answer {
@@ -1707,7 +1707,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     transform: rotate(90deg);
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     .faq-title {
         font-size: 2.5rem;
