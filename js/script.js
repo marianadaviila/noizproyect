@@ -15,6 +15,7 @@
         }
     };
 
+
 window.onscroll = function() {
     var navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
@@ -111,3 +112,26 @@ function toggleDescription(element) {
                 chatBody.scrollTop = chatBody.scrollHeight;
             }
         }
+$(document).ready(function(){
+    $("#teamCarousel").owlCarousel({
+        items: 3,
+        loop: true,
+        autoplay: false,
+        smartSpeed: 800,
+        margin: 20,
+        center: true,
+        dots: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+});
