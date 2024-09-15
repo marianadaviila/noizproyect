@@ -394,7 +394,6 @@ cite {
     background-color: #0057bf;
 }
 
-/* Ajuste de imágenes dentro de las categorías */
 .owl-carousel .portfolio-card {
     position: relative;
     margin-bottom: 30px;
@@ -1559,7 +1558,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     color: white;
     max-width: 500px;
     line-height: 1.5;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
 .rounded-image {
@@ -1577,7 +1576,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     color: white;
 }
 
-/* Botón azul claro */
 .btn-lightblue {
     background-color: #00BFFF;
     color: white;
@@ -1592,7 +1590,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-color: #009ACD;
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
     .contact-hero {
         padding: 80px 0 30px 0; 
@@ -1604,6 +1601,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
     .contact-hero p {
         font-size: 1.1rem;
+        margin-bottom: 30px; 
     }
 
     .contact-hero img {
