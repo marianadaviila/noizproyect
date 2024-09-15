@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noiz Agency - Carreras</title>
+    <title>Noiz Agency - Contacto</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
-        <div class="container-fluid"> 
+        <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="img/noizbl@2x.png" alt="Noiz Logo" height="45">
             </a>
@@ -37,58 +37,58 @@
     </nav>
 </header>
 
-<section class="careers-section">
+<section class="contact-hero">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 text-left">
-                <div class="fixed-section">
-                    <h1>Únete al Equipo Noiz</h1>
-                    <p>Donde la Creatividad y la Innovación Se Encuentran</p>
-                    <a href="about.html" class="btn btn-primary">Saber más</a>
-                </div>
-                <div class="spacer"></div>
-                <div class="scrollable-section">
-                    <ul class="careers-links">
-                        <li>
-                            <button class="toggle-btn" data-target="benefits">Beneficios de Trabajar en Noiz</button>
-                            <div id="benefits" class="toggle-content">
-                                Al unirte a Noiz, disfrutarás de desarrollo profesional, horarios flexibles, y un ambiente que fomenta la innovación.
-                            </div>
-                        </li>
-
-                        <li>
-                            <button class="toggle-btn" data-target="opportunities">Oportunidades Actuales</button>
-                            <div id="opportunities" class="toggle-content">
-                                Tenemos vacantes en diseño gráfico, marketing digital, y desarrollo web. Postúlate hoy.
-                            </div>
-                        </li>
-
-                        <li>
-                            <button class="toggle-btn" data-target="collaborators">Nuestros Colaboradores</button>
-                            <div id="collaborators" class="toggle-content">
-                                Noiz es un equipo multidisciplinario que valora el trabajo en equipo como base del éxito.
-                            </div>
-                        </li>
-
-                        <li>
-                            <button class="toggle-btn" data-target="apply">Cómo Aplicar</button>
-                            <div id="apply" class="toggle-content">
-                                Envía tu currículum y portafolio a través de nuestra plataforma y evaluaremos tu perfil.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1>¡Hablemos!</h1>
+                <p>Estamos aquí para ayudarte. Si deseas saber información sobre Noiz o formar parte de nuestro equipo, completa el formulario y nos pondremos en contacto contigo. En Noiz, buscamos acercarnos a tí de manera rápida y efectiva.</p>
             </div>
             <div class="col-md-6">
-                <div class="image-grid">
-                    <div class="left-column">
-                        <img src="img/carrera1.jpeg" alt="Team Member 1" class="grid-img">
-                        <img src="img/carrera2.jpeg" alt="Team Member 2" class="grid-img">
+                <img src="img/contact-hero.jpg" alt="Contact Hero Image" class="img-fluid rounded-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-form">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
                     </div>
-                    <div class="right-column">
-                        <img src="img/carrera3.jpeg" alt="Team Member 3" class="grid-img">
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lightblue">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Dirección</h3>
+                <p><a href="https://www.google.com/maps/place/Tegucigalpa,+Francisco+Moraz%C3%A1n/data=!4m2!3m1!1s0x8f6fa2babf743d51:0x68cf2238206ac9d3?sa=X&ved=1t:242&ictx=111">Calle Noiz, Tegucigalpa, Honduras</a></p>
+            </div>
+            <div class="col-md-4">
+                <h3>Teléfono</h3>
+                <p><a href="tel:+50412345678">+504 1234 5678</a></p>
+            </div>
+            <div class="col-md-4">
+                <h3>Correo electrónico</h3>
+                <p><a href="mailto:info@noizagency.com">info@noizagency.com</a></p>
             </div>
         </div>
     </div>
@@ -120,13 +120,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
-<script>
-
-    $('.toggle-btn').on('click', function () {
-        var target = $(this).data('target');
-        $('#' + target).slideToggle();
-    });
-</script>
 
 </body>
 </html>
